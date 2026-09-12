@@ -5,34 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Video</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      background-color: #000000; /* Fondo totalmente negro */
+      background-color: #000000;
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
       overflow: hidden;
     }
-    video {
+    iframe {
       width: 100%;
-      max-width: 800px;
-      max-height: 100vh;
-      outline: none;
+      max-width: 900px;
+      height: 80vh;
+      border: 0;
     }
   </style>
 </head>
 <body>
 
-  <!-- Reemplaza URL_DE_TU_VIDEO.mp4 por la dirección real de tu archivo de video -->
-  <video controls autoplay playsinline muted>
-    <source src="URL_DE_TU_VIDEO.mp4" type="video/mp4">
-    Tu navegador no soporta la reproducción de video.
-  </video>
+  <!-- Sustituye ID_DE_TU_ARCHIVO por tu ID real de Google Drive -->
+  <iframe src="https://archive.org/details/Halo.-4.-Adelante.-Hasta.-el.amanecer.-2012.1080p.-blu-ray.x-264.-aac-5.1-yts.-mx" allow="autoplay"></iframe>
 
 </body>
 </html>
