@@ -3,117 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Tarjeta Digital</title>
+  <title>Video</title>
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       background-color: #000000; /* Fondo totalmente negro */
-      color: #ffffff;
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      padding: 20px;
+      overflow: hidden;
     }
-    .card {
-      background-color: #121212; /* Tarjeta en gris muy oscuro para contraste */
+    video {
       width: 100%;
-      max-width: 380px;
-      padding: 32px 24px;
-      border-radius: 24px;
-      text-align: center;
-      border: 1px solid #27272a;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
-    }
-    .avatar {
-      width: 110px;
-      height: 110px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 16px;
-      border: 3px solid #38bdf8;
-      box-shadow: 0 0 15px rgba(56, 189, 248, 0.25);
-    }
-    h1 {
-      font-size: 1.6rem;
-      font-weight: 700;
-      margin-bottom: 6px;
-      color: #ffffff;
-    }
-    p.bio {
-      color: #a1a1aa;
-      font-size: 0.95rem;
-      margin-bottom: 28px;
-      line-height: 1.4;
-    }
-    .links {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-    }
-    .btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      background-color: #1f1f23;
-      color: #ffffff;
-      text-decoration: none;
-      padding: 14px 20px;
-      border-radius: 14px;
-      font-weight: 600;
-      font-size: 0.95rem;
-      transition: all 0.2s ease-in-out;
-      border: 1px solid #3f3f46;
-    }
-    .btn:hover, .btn:active {
-      transform: translateY(-2px);
-      background-color: #38bdf8;
-      color: #000000;
-      box-shadow: 0 5px 15px rgba(56, 189, 248, 0.3);
+      max-width: 800px;
+      max-height: 100vh;
+      outline: none;
     }
   </style>
 </head>
 <body>
 
-  <div class="card">
-    <!-- Pon la URL de tu imagen o logo -->
-    <img class="avatar" src="https://via.placeholder.com/150" alt="Foto de perfil">
-    
-    <!-- Nombre principal -->
-    <h1>Tu Nombre o Usuario</h1>
-    
-    <!-- Descripción corta -->
-    <p class="bio">Creador de contenido • Diseñador • Proyectos 3D</p>
-
-    <!-- Botones de Enlaces -->
-    <div class="links">
-      <a href="https://instagram.com/TU_USUARIO" class="btn" target="_blank">
-        📸 Instagram
-      </a>
-      
-      <a href="https://twitch.tv/TU_USUARIO" class="btn" target="_blank">
-        👾 Twitch
-      </a>
-      
-      <a href="https://youtube.com/@TU_CANAL" class="btn" target="_blank">
-        ▶️ YouTube
-      </a>
-      
-      <a href="https://tiktok.com/@TU_USUARIO" class="btn" target="_blank">
-        🎵 TikTok
-      </a>
-
-      <a href="https://wa.me/5210000000000" class="btn" target="_blank">
-        💬 WhatsApp Directo
-      </a>
-    </div>
-  </div>
+  <!-- Reemplaza URL_DE_TU_VIDEO.mp4 por la dirección real de tu archivo de video -->
+  <video controls autoplay playsinline muted>
+    <source src="URL_DE_TU_VIDEO.mp4" type="video/mp4">
+    Tu navegador no soporta la reproducción de video.
+  </video>
 
 </body>
 </html>
