@@ -180,6 +180,20 @@
     min-height: 260px;
     margin: 0 auto;
     background: #000;
+    overflow: hidden;
+  }
+
+  /* Cubierta para la marca de agua superior derecha */
+  .video-wrap::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55px;
+    height: 50px;
+    background: #000;
+    z-index: 5;
+    pointer-events: none;
   }
 
   .video-wrap iframe{
@@ -329,8 +343,8 @@
 
 <div class="hero">
   <div class="hero-tag">TERMINAL DE DESPLIEGUE // ACCESO SPARTAN</div>
-  <h1>El anillo<br>siempre espera.</h1>
-  <p class="lede">Un repaso no oficial al universo de Halo: la guerra contra los Covenant, Zeta Halo y el legado del Jefe Maestro, con material audiovisual de la saga.</p>
+  <h1>El universo de Halo<br>siempre espera.</h1>
+  <p class="lede">Un repaso al universo de Halo: la guerra contra los Covenant, Zeta Halo y el legado del Jefe Maestro, con material audiovisual de la saga.</p>
 </div>
 
 <section class="briefing" id="briefing">
