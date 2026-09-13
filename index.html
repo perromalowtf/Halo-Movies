@@ -176,13 +176,15 @@
     position: relative;
     width: 100%;
     max-width: 1000px;
+    aspect-ratio: 16 / 9;
     margin: 0 auto;
     background: #000;
   }
 
-  .video-wrap video{
+  .video-wrap iframe{
     width: 100%;
-    height: auto;
+    height: 100%;
+    border: 0;
     display: block;
   }
 
@@ -329,10 +331,11 @@
   </div>
 
   <div class="video-wrap">
-    <video controls preload="metadata">
-      <source src="https://archive.org/download/Halo.-4.-Adelante.-Hasta.-el.amanecer.-2012.1080p.-blu-ray.x-264.-aac-5.1-yts.-mx/Halo.-4.-Adelante.-Hasta.-el.amanecer.-2012.1080p.-blu-ray.x-264.-aac-5.1-yts.-mx.mp4" type="video/mp4">
-      Tu navegador no soporta la reproducción de video HTML5.
-    </video>
+    <iframe 
+      src="https://archive.org/embed/Halo.-4.-Adelante.-Hasta.-el.amanecer.-2012.1080p.-blu-ray.x-264.-aac-5.1-yts.-mx" 
+      allowfullscreen 
+      frameborder="0">
+    </iframe>
   </div>
 
   <div class="video-caption">
