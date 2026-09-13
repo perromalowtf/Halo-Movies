@@ -177,6 +177,7 @@
     width: 100%;
     max-width: 1000px;
     aspect-ratio: 16 / 9;
+    min-height: 260px;
     margin: 0 auto;
     background: #000;
   }
@@ -214,6 +215,14 @@
   @keyframes pulse{
     0%,100%{ opacity: 1; }
     50%{ opacity: 0.25; }
+  }
+
+  /* ---------- responsive mobile adjustments ---------- */
+  @media (max-width: 600px){
+    section{ padding: 60px 3vw; }
+    .video-wrap{
+      min-height: 270px;
+    }
   }
 
   /* ---------- timeline ---------- */
