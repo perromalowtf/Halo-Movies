@@ -3,158 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Halo Timeline</title>
+  <title>Halo 4: Forward Unto Dawn</title>
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
-    body {
-      background-color: #050b14;
-      background-image: 
-        linear-gradient(rgba(0, 255, 204, 0.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0, 255, 204, 0.04) 1px, transparent 1px);
-      background-size: 35px 35px;
-      color: #cbd5e1;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      padding: 50px 20px;
-      min-height: 100vh;
-    }
-    .timeline {
-      max-width: 950px;
-      margin: 0 auto;
+    body, html {
+      width: 100%;
+      height: 100%;
+      background-color: #000000; /* Fondo negro puro */
+      overflow: hidden;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
-    .timeline-item {
-      display: grid;
-      grid-template-columns: 140px 1fr;
-      gap: 30px;
-      padding: 40px 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-    .timeline-item:last-child {
-      border-bottom: none;
-    }
-    .timeline-year {
-      font-size: 2.4rem;
-      font-weight: 800;
-      color: #2dd4bf;
-      font-family: Consolas, Monaco, "Courier New", monospace;
-      line-height: 1;
-    }
-    .timeline-content {
+    .video-container {
+      width: 100%;
+      max-width: 1000px;
+      max-height: 100vh;
       display: flex;
-      flex-direction: column;
-      gap: 12px;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
     }
-    .launch-date {
-      color: #d97706;
-      font-size: 0.9rem;
-      font-weight: 600;
-      letter-spacing: 0.5px;
-    }
-    h3 {
-      color: #ffffff;
-      font-size: 1.6rem;
-      font-weight: 700;
-      line-height: 1.2;
-    }
-    p {
-      color: #94a3b8;
-      line-height: 1.6;
-      font-size: 1rem;
-    }
-    ul {
-      list-style: none;
-      margin-top: 10px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-    li {
-      position: relative;
-      padding-left: 24px;
-      color: #e2e8f0;
-      font-size: 0.98rem;
-      line-height: 1.5;
-    }
-    li::before {
-      content: "■";
-      position: absolute;
-      left: 0;
-      color: #2dd4bf;
-      font-size: 0.8rem;
-      top: 1px;
-    }
-    @media (max-width: 640px) {
-      body {
-        padding: 20px 15px;
-      }
-      .timeline-item {
-        grid-template-columns: 1fr;
-        gap: 12px;
-        padding: 30px 0;
-      }
-      .timeline-year {
-        font-size: 2rem;
-      }
+    video {
+      width: 100%;
+      max-height: 100vh;
+      border-radius: 8px;
+      outline: none;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
     }
   </style>
 </head>
 <body>
 
-  <div class="timeline">
-
-    <!-- HALO 3 -->
-    <div class="timeline-item">
-      <div class="timeline-year">2552</div>
-      <div class="timeline-content">
-        <span class="launch-date">Lanzamiento: 2007</span>
-        <h3>Halo 3</h3>
-        <p>"Finish the Fight." El desenlace de la trilogía original: la Tierra resiste el asedio final de la Alianza, se revela la verdadera naturaleza de los Forerunners y el Jefe Maestro se adentra en un nuevo Halo para detener el Flood de forma definitiva.</p>
-        <ul>
-          <li>Modo Forja para editar mapas multijugador desde consola</li>
-          <li>Grabación y edición de partidas (Theater)</li>
-          <li>Escenarios más abiertos y verticales que sus predecesores</li>
-          <li>Uno de los lanzamientos más vendidos de su generación en Xbox 360</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- HALO 3: ODST -->
-    <div class="timeline-item">
-      <div class="timeline-year">2552</div>
-      <div class="timeline-content">
-        <span class="launch-date">Lanzamiento: 2009</span>
-        <h3>Halo 3: ODST</h3>
-        <p>"Feet First Into Hell." La historia se sitúa durante los eventos de Halo 2 y sigue a un escuadrón de Tropas de Choque de Caída Orbital (ODST) atrapados en las ruinas de Nueva Mombasa tras el salto a primario de la nave del Pesar.</p>
-        <ul>
-          <li>Estructura narrativa estilo "noir" con exploración urbana no lineal</li>
-          <li>Debut del aclamado modo cooperativo de supervivencia Tiroteo (Firefight)</li>
-          <li>Banda sonora atmosférica con influencias de jazz y tono melancólico</li>
-          <li>Perspectiva de un soldado humano común sin las mejoras ni escudos de un Spartan</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- HALO 4 -->
-    <div class="timeline-item">
-      <div class="timeline-year">2557</div>
-      <div class="timeline-content">
-        <span class="launch-date">Lanzamiento: 2012</span>
-        <h3>Halo 4</h3>
-        <p>Primer capítulo de 343 Industries. El Jefe Maestro despierta cuatro años y medio después tras un naufragio espacial, en un mundo Forerunner donde debe enfrentarse al Didacta mientras Cortana empieza a sucumbir a la rampancia.</p>
-        <ul>
-          <li>Arranca la trilogía "Reclamador"</li>
-          <li>Mayor peso narrativo en la relación Jefe Maestro-Cortana</li>
-          <li>Nuevos enemigos: los Prometeos, de origen Forerunner</li>
-          <li>Modo Spartan Ops con misiones cooperativas episódicas</li>
-        </ul>
-      </div>
-    </div>
-
+  <div class="video-container">
+    <!-- Reproductor nativo HTML5 optimizado para datos móviles -->
+    <video 
+      controls 
+      preload="none" 
+      playsinline 
+      poster="https://archive.org/services/img/Halo.-4.-Adelante.-Hasta.-el.amanecer.-2012.1080p.-blu-ray.x-264.-aac-5.1-yts.-mx">
+      
+      <!-- Enlace directo al archivo .mp4 en Internet Archive -->
+      <source 
+        src="https://archive.org/download/Halo.-4.-Adelante.-Hasta.-el.amanecer.-2012.1080p.-blu-ray.x-264.-aac-5.1-yts.-mx/Halo.-4.-Adelante.-Hasta.-el.amanecer.-2012.1080p.-blu-ray.x-264.-aac-5.1-yts.-mx.mp4" 
+        type="video/mp4">
+      
+      Tu navegador no soporta la reproducción de video.
+    </video>
   </div>
 
 </body>
