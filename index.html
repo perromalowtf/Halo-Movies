@@ -13,76 +13,38 @@
     body, html {
       width: 100%;
       height: 100%;
-      background-color: #000000;
+      background-color: #000000; /* Fondo negro puro */
       overflow: hidden;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    }
-    /* Pantalla inicial para activar el audio con una pulsación */
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #000000;
-      color: #ffffff;
       display: flex;
       justify-content: center;
       align-items: center;
-      cursor: pointer;
-      z-index: 10;
     }
-    .play-btn {
-      padding: 16px 28px;
-      border: 1px solid #38bdf8;
-      border-radius: 50px;
-      background: rgba(56, 189, 248, 0.1);
-      color: #ffffff;
-      font-size: 1rem;
-      font-weight: 600;
-      letter-spacing: 0.5px;
-      box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
-      transition: transform 0.2s ease;
-    }
-    .play-btn:active {
-      transform: scale(0.95);
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      max-width: 100vw;
+      max-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     iframe {
       width: 100%;
       height: 100%;
       border: 0;
-      display: none; /* Se oculta hasta hacer clic */
     }
   </style>
 </head>
 <body>
 
-  <!-- Botón de inicio sobre pantalla negra -->
-  <div id="overlay" class="overlay" onclick="iniciarVideo()">
-    <div class="play-btn">▶ Toca para ver con sonido</div>
+  <div class="video-wrapper">
+    <iframe 
+      src="https://archive.org/embed/Halo.-4.-Adelante.-Hasta.-el.amanecer.-2012.1080p.-blu-ray.x-264.-aac-5.1-yts.-mx?autoplay=1" 
+      allow="autoplay; fullscreen" 
+      allowfullscreen>
+    </iframe>
   </div>
-
-  <!-- Contenedor del video -->
-  <iframe 
-    id="videoPlayer"
-    src="" 
-    allow="autoplay; fullscreen" 
-    allowfullscreen>
-  </iframe>
-
-  <script>
-    function iniciarVideo() {
-      var overlay = document.getElementById('overlay');
-      var iframe = document.getElementById('videoPlayer');
-      
-      // Oculta la pantalla de inicio y muestra el reproductor
-      overlay.style.display = 'none';
-      iframe.style.display = 'block';
-      
-      // Asigna la URL con autoplay habilitado tras el toque del usuario
-      iframe.src = "https://archive.org/embed/Halo.-4.-Adelante.-Hasta.-el.amanecer.-2012.1080p.-blu-ray.x-264.-aac-5.1-yts.-mx?autoplay=1";
-    }
-  </script>
 
 </body>
 </html>
