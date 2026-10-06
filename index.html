@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Halo 4: Forward Unto Dawn</title>
 <style>
   * {
@@ -14,15 +14,17 @@
   html, body {
     background-color: #000000;
     color: #ffffff;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    touch-action: none;
   }
 
   body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
   }
 
   .video-container {
@@ -30,6 +32,7 @@
     max-width: 1200px;
     aspect-ratio: 16 / 9;
     background: #000000;
+    touch-action: auto;
   }
 
   iframe {
@@ -39,12 +42,11 @@
     display: block;
   }
 
-  /* Ajustes para pantallas pequeñas (móviles) */
   @media (max-width: 600px) {
     .video-container {
       width: 100vw;
-      height: 56.25vw; /* Mantiene la proporción 16:9 exacta al ancho de la pantalla */
-      min-height: 240px; /* Asegura altura suficiente para los botones del menú */
+      height: 56.25vw;
+      min-height: 240px;
     }
   }
 </style>
