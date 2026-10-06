@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Halo // Terminal de despliegue</title>
+<title>Halo // Halo 4: Forward Unto Dawn </title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500&display=swap');
 
@@ -183,11 +183,24 @@
     overflow: hidden;
   }
 
-  .video-wrap video{
+  /* Cubierta para la marca de agua superior derecha */
+  .video-wrap::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55px;
+    height: 50px;
+    background: #000;
+    z-index: 5;
+    pointer-events: none;
+  }
+
+  .video-wrap iframe{
     width: 100%;
     height: 100%;
+    border: 0;
     display: block;
-    object-fit: contain;
   }
 
   .video-caption{
@@ -330,7 +343,7 @@
 
 <div class="hero">
   <div class="hero-tag">TERMINAL DE DESPLIEGUE // ACCESO SPARTAN</div>
-  <h1>El anillo<br>siempre espera.</h1>
+  <h1>El universo de Halo <br>siempre espera.</h1>
   <p class="lede">Un repaso no oficial al universo de Halo: la guerra contra los Covenant, Zeta Halo y el legado del Jefe Maestro, con material audiovisual de la saga.</p>
 </div>
 
@@ -341,10 +354,11 @@
   </div>
 
   <div class="video-wrap">
-    <video controls preload="metadata">
-      <source src="https://archive.org/download/Halo.-4.-Adelante.-Hasta.-el.amanecer.-2012.1080p.-blu-ray.x-264.-aac-5.1-yts.-mx/Halo.-4.-Adelante.-Hasta.-el.amanecer.-2012.1080p.-blu-ray.x-264.-aac-5.1-yts.-mx.mp4" type="video/mp4">
-      Tu navegador no soporta la reproducción de video HTML5.
-    </video>
+    <iframe 
+      src="https://archive.org/embed/Halo.-4.-Adelante.-Hasta.-el.amanecer.-2012.1080p.-blu-ray.x-264.-aac-5.1-yts.-mx" 
+      allowfullscreen 
+      frameborder="0">
+    </iframe>
   </div>
 
   <div class="video-caption">
@@ -421,12 +435,26 @@
       <div>
         <div class="release-note">Lanzamiento: 2007</div>
         <div class="title">Halo 3</div>
-        <div class="desc">"Finish the Fight." El desenlace de la trilogia original: la Tierra resiste el asedio final de la Alianza, se revela la verdadera naturaleza de los Forerunners y el Jefe Maestro se adentra en un nuevo Halo para detener el Flood de forma definitiva.</div>
+        <div class="desc">"Finish the Fight." El desenlace de la trilogía original: la Tierra resiste el asedio final de la Alianza, se revela la verdadera naturaleza de los Forerunners y el Jefe Maestro se adentra en un nuevo Halo para detener el Flood de forma definitiva.</div>
         <ul class="tags">
           <li>Modo Forja para editar mapas multijugador desde consola</li>
-          <li>Grabacion y edicion de partidas (Theater)</li>
-          <li>Escenarios mas abiertos y verticales que sus predecesores</li>
-          <li>Uno de los lanzamientos mas vendidos de su generacion en Xbox 360</li>
+          <li>Grabación y edición de partidas (Theater)</li>
+          <li>Escenarios más abiertos y verticales que sus predecesores</li>
+          <li>Uno de los lanzamientos más vendidos de su generación en Xbox 360</li>
+        </ul>
+      </div>
+    </div>
+    <div class="t-row">
+      <div class="year">2552</div>
+      <div>
+        <div class="release-note">Lanzamiento: 2009</div>
+        <div class="title">Halo 3: ODST</div>
+        <div class="desc">"Feet First Into Hell." La historia se sitúa durante los eventos de Halo 2 y sigue a un escuadrón de Tropas de Choque de Caída Orbital (ODST) atrapados en las ruinas de Nueva Mombasa tras el salto a primario de la nave del Pesar.</div>
+        <ul class="tags">
+          <li>Estructura narrativa estilo "noir" con exploración urbana no lineal</li>
+          <li>Debut del aclamado modo cooperativo de supervivencia Tiroteo (Firefight)</li>
+          <li>Banda sonora atmosférica con influencias de jazz y tono melancólico</li>
+          <li>Perspectiva de un soldado humano común sin las mejoras ni escudos de un Spartan</li>
         </ul>
       </div>
     </div>
@@ -435,12 +463,12 @@
       <div>
         <div class="release-note">Lanzamiento: 2012</div>
         <div class="title">Halo 4</div>
-        <div class="desc">Primer capitulo de 343 Industries. El Jefe Maestro despierta cuatro anos y medio despues tras un naufragio espacial, en un mundo Forerunner donde debe enfrentarse al Didacta mientras Cortana empieza a sucumbir a la rampancia.</div>
+        <div class="desc">Primer capítulo de 343 Industries. El Jefe Maestro despierta cuatro años y medio después tras un naufragio espacial, en un mundo Forerunner donde debe enfrentarse al Didacta mientras Cortana empieza a sucumbir a la rampancia.</div>
         <ul class="tags">
-          <li>Arranca la trilogia "Reclamador"</li>
-          <li>Mayor peso narrativo en la relacion Jefe Maestro-Cortana</li>
+          <li>Arranca la trilogía "Reclamador"</li>
+          <li>Mayor peso narrativo en la relación Jefe Maestro-Cortana</li>
           <li>Nuevos enemigos: los Prometeos, de origen Forerunner</li>
-          <li>Modo Spartan Ops con misiones cooperativas episodicas</li>
+          <li>Modo Spartan Ops con misiones cooperativas episódicas</li>
         </ul>
       </div>
     </div>
@@ -454,3 +482,31 @@
           <li>Campana centrada en el escuadron, con IA de companeros mejorada</li>
           <li>Nuevas habilidades de movimiento: impulso, subida por muros, planeo</li>
           <li>Modo Warzone, combinando IA y jugadores en mapas grandes</li>
+          <li>Narrativa dividida que genero debate entre la comunidad</li>
+        </ul>
+      </div>
+    </div>
+    <div class="t-row">
+      <div class="year">2560</div>
+      <div>
+        <div class="release-note">Lanzamiento: 2021</div>
+        <div class="title">Halo Infinite</div>
+        <div class="desc">El Jefe Maestro despierta sin recuerdos recientes sobre un Zeta Halo semidestruido, sin rastro de Cortana. Con la ayuda de un piloto de la UNSC y una nueva IA llamada "el Arma", debera reunir lo que queda de las fuerzas humanas para enfrentar a los Bannis.</div>
+        <ul class="tags">
+          <li>Primer mundo abierto de la saga principal</li>
+          <li>Gancho de agarre y nuevo equipo Spartan modular</li>
+          <li>Multijugador free-to-play independiente de la campana</li>
+          <li>Retorno a un tono mas clasico tras la trilogia Reclamador</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>Página de fans no oficial · sin afiliación con Microsoft ni 343 Industries.</div>
+  <div>Halo es marca registrada de Microsoft Corporation.</div>
+</footer>
+
+</body>
+</html>
